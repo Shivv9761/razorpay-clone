@@ -1,0 +1,53 @@
+
+
+.featureCard{
+    cursor: pointer;
+}
+
+/* .featureCard:hover .featureCardSVG{
+    box-shadow: 10px 10px 8px 10px #888888;
+} */
+
+.featureCard:hover .featureCardSVG{
+    box-shadow: drop-shadow(0px 2px 24px rgba(252, 250, 250, 0.4));
+    filter: drop-shadow(3px 3px 6px #d5d8dd);
+    stroke-opacity: 0 !important;
+}
+.featureCard:hover .featureCardBox {
+    background-image: url(images/features-wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 1rem right;
+}
+
+/* .filtered {
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    } */
+
+    .featureCard2:hover{
+        filter: drop-shadow(6px 6px 16px black);
+        /* stroke-opacity: 0 !important; */
+        stroke: #050608;
+    }
+    .featureCard2:hover .featureCardSVG{
+        stroke-opacity: 0 !important;
+    }
+.featureCard2:hover .featureCardBox{
+    background-image: url(images/features2-wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 1rem right;
+}
+.CompaniesList{
+    
+    animation: 20s linear 0s infinite normal none running companiesAnimation;
+}
+@keyframes companiesAnimation {
+    0%{
+       
+        transform:translateY(0px);
+    }
+  
+    100%{
+        transform: translateY(-600px);
+    }
+}
+    
